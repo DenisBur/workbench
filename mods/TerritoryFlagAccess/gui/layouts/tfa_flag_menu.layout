@@ -1,0 +1,120 @@
+FrameWidgetClass rootFrame {
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass tfa_outer {
+  ignorepointer 1
+  size 0.55 0.75
+  halign center_ref
+  valign center_ref
+  hexactpos 0
+  vexactpos 0
+  hexactsize 0
+  vexactsize 0
+  style rover_sim_black
+  {
+   TextWidgetClass tfa_title {
+    ignorepointer 1
+    position 0 0.02
+    size 0.95 0.06
+    halign center_ref
+    hexactpos 0
+    vexactpos 0
+    hexactsize 0
+    vexactsize 0
+    style Normal
+    text "Территория флага"
+    font "gui/fonts/Metron-Bold28"
+    "exact text" 1
+    "text halign" center
+   }
+   MultilineTextWidgetClass tfa_help {
+    ignorepointer 1
+    position 0.03 0.1
+    size 0.94 0.22
+    hexactpos 0
+    vexactpos 0
+    hexactsize 0
+    vexactsize 0
+    style Normal
+    text ""
+    font "gui/fonts/sdf_metronbook24"
+   }
+   TextListboxWidgetClass tfa_list {
+    ignorepointer 0
+    position 0.03 0.33
+    size 0.94 0.38
+    hexactpos 0
+    vexactpos 0
+    hexactsize 0
+    vexactsize 0
+   }
+   ButtonWidgetClass tfa_btn_close {
+    position 0.03 0.74
+    size 0.2 0.08
+    hexactpos 0
+    vexactpos 0
+    hexactsize 0
+    vexactsize 0
+    style Editor
+    text "Закрыть"
+   }
+   ButtonWidgetClass tfa_btn_add {
+    position 0.25 0.74
+    size 0.22 0.08
+    hexactpos 0
+    vexactpos 0
+    hexactsize 0
+    vexactsize 0
+    style Editor
+    text "Добавить ближайшего"
+   }
+   ButtonWidgetClass tfa_btn_remove {
+    position 0.49 0.74
+    size 0.22 0.08
+    hexactpos 0
+    vexactpos 0
+    hexactsize 0
+    vexactsize 0
+    style Editor
+    text "Удалить выбранного"
+   }
+   ButtonWidgetClass tfa_btn_resident {
+    position 0.03 0.84
+    size 0.22 0.08
+    hexactpos 0
+    vexactpos 0
+    hexactsize 0
+    vexactsize 0
+    style Editor
+    text "Роль: житель"
+   }
+   ButtonWidgetClass tfa_btn_builder {
+    position 0.27 0.84
+    size 0.22 0.08
+    hexactpos 0
+    vexactpos 0
+    hexactsize 0
+    vexactsize 0
+    style Editor
+    text "Роль: строитель"
+   }
+   ButtonWidgetClass tfa_btn_transfer {
+    position 0.51 0.84
+    size 0.28 0.08
+    hexactpos 0
+    vexactpos 0
+    hexactsize 0
+    vexactsize 0
+    style Editor
+    text "Передать ближайшему"
+   }
+  }
+ }
+ }
+}
